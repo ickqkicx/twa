@@ -1,8 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using RestAPI.Models;
+using ControllerBasedApi.Models;
+using ControllerBasedApi.Data;
 
-namespace RestAPI.Controllers;
+namespace ControllerBasedApi.Controllers;
 
 // if (!ModelState.IsValid) return BadRequest(ModelState);
 // ModelState.AddModelError()

@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace RestAPI.Models;
+namespace ControllerBasedApi.Models;
 
 [Table("TodoItem", Schema = "dbo")]
 public class TodoItem

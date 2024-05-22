@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using ControllerBasedApi.Models;
 
-namespace RestAPI.Models;
+namespace ControllerBasedApi.Data;
 
 public class TodoContext : DbContext
 {
