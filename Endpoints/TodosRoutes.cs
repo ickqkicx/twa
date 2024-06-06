@@ -71,12 +71,12 @@ static class TodosRoutes
 
     static public WebApplication MapTodosRoutes(this WebApplication app)
     {
-        var users = app.MapGroup("todos");
-        users.MapGet("/", All);
-        users.MapGet("/{id}", ById);
-        users.MapPost("/", Post);
-        users.MapPatch("/{id}", Patch);
-        users.MapDelete("/{id}", Delete);
+        var todos = app.MapGroup("todos");
+        todos.MapGet(string.Empty, All);
+        todos.MapGet("{id}", ById);
+        todos.MapPost(string.Empty, Post);
+        todos.MapPatch("{id}", Patch);
+        todos.MapDelete("{id}", Delete);
 
         return app;
     }
