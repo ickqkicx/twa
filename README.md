@@ -1,2 +1,5 @@
 # twa
-tutorial asp.net (web-api)
+
+cors policy
+1. Allow
+2. Specific
