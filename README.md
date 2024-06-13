@@ -9,8 +9,8 @@ upload, download files</br>
 [middleware (and HttpContext.Items)](https://github.com/ickqkicx/twa/tree/middleware)</br>
 cookie</br>
 session</br>
-signalR</br>
-auth (cookie, jwt, windows, OAuth2, ...)</br>
+signalR, webrtc</br>
+auth (cookie, jwt, windows, OAuth2, ... ratelimiting, bans)</br>
 cash (memorycash, redis, ...)</br>
 email</br>
 docker</br>
