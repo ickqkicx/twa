@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>

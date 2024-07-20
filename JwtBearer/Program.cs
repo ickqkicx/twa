@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
