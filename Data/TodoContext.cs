@@ -17,7 +17,7 @@ public class TodoContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer(_configuration.GetConnectionString("TodoContext"));
+        optionsBuilder.UseSqlServer(_configuration.GetConnectionString(nameof(TodoContext)));
         base.OnConfiguring(optionsBuilder);
     }
 
