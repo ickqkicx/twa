@@ -1,8 +1,7 @@
 # twa
 tutorial asp.net (web-api)
 # TODO
-[controller-based-api](https://github.com/ickqkicx/twa/tree/controller-based-api)</br>
-[minimal-api](https://github.com/ickqkicx/twa/tree/minimal-api)</br>
+[restful api (ControllerBasedAPI, MinimalAPI)](https://github.com/ickqkicx/twa/tree/restfulAPI)
 [logging (Serilog, log4net, Nlog)](https://github.com/ickqkicx/twa/tree/logging)</br>
 upload, download files</br>
 [cors](https://github.com/ickqkicx/twa/tree/cors)</br>
