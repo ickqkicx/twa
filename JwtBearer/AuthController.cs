@@ -18,11 +18,11 @@ public class AuthController(AuthDbContext dbContext) : ControllerBase
 
     [AllowAnonymous]
     [HttpPost("SignIn")]
-    public async Task<ActionResult> SignIn(SingInUser singin)
+    public async Task<ActionResult> SignIn(SignInUser signin)
     {
         var user = await _dbContext.Users
             .Include(u => u.Roles)
-            .FirstOrDefaultAsync(u => u.Login == singin.Login && u.Password == singin.Password);
+            .FirstOrDefaultAsync(u => u.Login == signin.Login && u.Password == signin.Password);
 
         if (user is null)
             return NotFound("Пользователь не найден!");
