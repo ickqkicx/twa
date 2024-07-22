@@ -10,7 +10,7 @@ upload, download files</br>
 [session](https://github.com/ickqkicx/twa/tree/session)</br>
 [signalR, WebRTC](https://github.com/ickqkicx/twa/tree/signalRAndWebRTC)</br>
 [auth (cookie, jwt, windows, OAuth2)](https://github.com/ickqkicx/twa/tree/auth)</br>
-email (register, approve, restore)</br>
+[account (signup, forgotpassword)](https://github.com/ickqkicx/twa/tree/account)</br>
 ResponseCompression</br>
 cash (memorycash, redis, ...)</br>
 ratelimiting ... block ip</br>
