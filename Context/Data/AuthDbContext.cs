@@ -7,6 +7,7 @@ public class AuthDbContext : DbContext
 {
     private readonly IConfiguration _configuration;
 
+    public DbSet<GoogleUser> GoogleUsers { get; set; } = default!;
     public DbSet<User> Users { get; set; } = default!;
     public DbSet<Role> Roles { get; set; } = default!;
 
