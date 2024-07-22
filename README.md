@@ -1,5 +1,5 @@
 # twa
 
 restful-api http</br>
-[ControllerBasedApi](https://github.com/ickqkicx/twa/tree/restrulAPI/ControllerBasedAPI)</br>
-[MinimalApi](https://github.com/ickqkicx/twa/tree/restrulAPI/MinimalApi)</br>
+[ControllerBasedApi](https://github.com/ickqkicx/twa/blob/restfulAPI/ControllerBasedAPI/Controllers/TodoItemController.cs)</br>
+[MinimalApi](https://github.com/ickqkicx/twa/blob/restfulAPI/MinimalAPI/Endpoints/TodosRoutes.cs)</br>
