@@ -41,3 +41,5 @@ public class TokenService
         }
     }
 }
+
+builder.Services.AddSingleton<TokenService>();

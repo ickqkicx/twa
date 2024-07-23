@@ -28,3 +28,5 @@ public class TokenCleanupService(TokenService tokenService) : IHostedService, ID
         _timer?.Dispose();
     }
 }
+
+builder.Services.AddHostedService<TokenCleanupService>();

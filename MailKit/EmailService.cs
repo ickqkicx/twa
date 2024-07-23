@@ -33,3 +33,5 @@ public class EmailService
         await client.DisconnectAsync(true);
     }
 }
+
+builder.Services.AddSingleton<EmailService>();
