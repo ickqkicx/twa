@@ -9,3 +9,11 @@ var cookieOptions = new CookieOptions
     MaxAge = TimeSpan.FromDays(1),
 };
 httpContext.Response.Cookies.Append("tempCookie", "123", cookieOptions);
+
+
+app.UseCookiePolicy(new CookiePolicyOptions()
+{
+    HttpOnly = HttpOnlyPolicy.Always,
+    Secure = CookieSecurePolicy.Always,
+    MinimumSameSitePolicy = SameSiteMode.None
+});
