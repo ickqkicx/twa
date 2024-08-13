@@ -1,0 +1,48 @@
+syntax = "proto3";
+package GrpcTodoCore;
+
+option csharp_namespace = "GrpcTodoCore.Proto";
+
+service Todos {
+  rpc GetTodoItems (GetTodoItemsRequest) returns (GetTodoItemsResponse);
+  rpc GetTodoItemsStream (GetTodoItemsRequest) returns (stream TodoItem);
+  rpc GetTodoItem (TodoItemRequest) returns (TodoItem);
+  rpc PostTodoItem (PostTodoItemRequest) returns (TodoItem);
+  rpc PutTodoItem (TodoItem) returns (TodoItem);
+  rpc DeleteTodoItem (TodoItemRequest) returns (TodoItem);
+
+  rpc Duplex (stream Num) returns (stream Num);
+}
+
+message GetTodoItemsRequest {
+  int32 page = 1;
+  int32 size = 2;
+  message TodoItemFilter {
+	string title = 1;
+	bool isComplete = 2;
+  }
+  TodoItemFilter filter = 3;
+}
+
+message GetTodoItemsResponse {
+	int32 count = 1;
+	repeated TodoItem todoItems = 2;
+}
+
+message TodoItemRequest {
+	int32 id = 1;
+}
+
+message PostTodoItemRequest {
+	string title = 1;
+}
+
+message TodoItem {
+	int32 id = 1;
+	string title = 2;
+	bool isComplete = 3;
+}
+
+message Num {
+	int32 x = 1;
+}
